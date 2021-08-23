@@ -1,0 +1,12 @@
+executar nesta pasta:
+
+javac -cp "biblioteca.jar" Main.java
+java -cp ".:biblioteca.jar" Main (argumentos)
+
+Para recompilar bibliotecas:
+vá para a pasta biblioteca
+execute:
+javac -d classes dominio/DiaDaSemana.java servico/DescreverDiaDaSemana.java
+cd classes/
+jar -cf biblioteca.jar .
+mv biblioteca.jar ../../
