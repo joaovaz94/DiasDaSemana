@@ -1,5 +1,7 @@
 package dominio;
 
+import java.util.Objects;
+
 public class DiaDaSemana {
 
 	int indice;
@@ -88,5 +90,9 @@ public class DiaDaSemana {
 		else {
 			return false;
 		}
+	}
+
+	public int hashCode() {
+		return Objects.hash(indice);
 	}
 }

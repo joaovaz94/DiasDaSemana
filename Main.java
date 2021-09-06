@@ -26,9 +26,9 @@ public class Main {
 			.of(args)
 			.filter(Main::verificaInteiro)
 			.map(Integer::valueOf)
-			.distinct()
 			.filter(d -> d > 0 && d < 8)
 			.map(DiaDaSemana::new)
+			.distinct()
 			.forEach(d -> System.out.println(d.toString()));
 
 	}
